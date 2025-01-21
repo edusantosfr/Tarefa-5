@@ -47,6 +47,17 @@ a {
     border-radius: 20px;
 }
 
+#calculo {
+    display: flex;
+    background: rgb(255, 255, 255);
+    margin: 20px;
+    height: 80px;
+    border-radius: 10px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+}
+
 /* NUMEROS */
 
 #numeros {
@@ -103,7 +114,7 @@ a {
     padding-right: 32px;
 }
 
-.porcentagem {
+.resto {
     padding-left: 27px;
     padding-right: 26px;
 }
