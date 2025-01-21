@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 300px 210px;
+    grid-template-rows: 120px 445px;
+
+    grid-template-areas:
+        "tela tela"
+        "numeros operadores"
+    ;
+
+    justify-content: center;
+    align-content: center;
+}
+
+a {
+    box-shadow: 1px 1px 10px rgb(214, 214, 214);
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+}
+/* TELA */
+
+#tela {
+    grid-area: tela;
+    background-color: rgb(94, 94, 94);
+
+    align-content: center;
+    border-radius: 20px;
+}
+
+/* NUMEROS */
+
+#numeros {
+    grid-area: numeros;
+    background-color: rgb(241, 241, 241);
+
+    align-content: center;
+    border-radius: 20px;
+}
+
+#numeros a:hover{
+    background-color: rgb(179, 179, 179);
+    color: white;
+    transition: 0.2s;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+}
+
+/* OPERADORES */
+
+#operadores {
+    grid-area: operadores;
+    background-color: rgb(196, 196, 196);
+
+    align-content: center;
+    border-radius: 20px;
+}
+
+#operadores a {
+    background: rgb(241, 241, 241);
+    transition: 0.2s;
+}
+
+#operadores a:hover{
+    background-color: rgb(179, 179, 179);
+    color: white;
+}
+
+.igual {
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+.cancelar {
+    padding-left: 30px;
+    padding-right: 31px;
+}
+
+.ponto {
+    padding-left: 33px;
+    padding-right: 32px;
+}
+
+.porcentagem {
+    padding-left: 27px;
+    padding-right: 26px;
+}
+
+.menos {
+    padding-left: 33px;
+    padding-right: 32px;
+}
+
+.mais {
+    padding-left: 31px;
+    padding-right: 29px;
+}
